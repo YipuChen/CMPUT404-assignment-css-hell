@@ -120,26 +120,3 @@ section {
     border-width: thin;
     border-bottom-style: solid;
 }
-
-
-.shining {
-  font-size: 2em;
-  font-family: Lato, sans-serif;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  background: linear-gradient(90deg,  #25aaec 10%, rgba(255,255,255,1) 50%, #25aaec 100%);
-  background-size: 80%;
-  background-repeat: repeat;
-  color: transparent;
-  background-clip: text;
-  animation: shining 5s linear infinite;
-}
-
-@keyframes shining {
-  from {
-    background-position: -500%;
-  }
-  to {
-    background-position: 500%;
-  }
-}
