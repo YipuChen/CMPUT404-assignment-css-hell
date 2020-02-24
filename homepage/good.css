@@ -1,0 +1,145 @@
+#body {
+    background-color: rgb(238, 238, 238);
+}
+
+#header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    display: inline;
+    grid-row: 1;
+    display: inline;
+    /* background-color: #66CCFF; */
+    background-color: #27b5fb;
+    color: whitesmoke;
+    text-align: end;
+    padding-right: 3%;
+    border: 5px;
+    border-style: double;
+}
+
+#container {
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    background-color: white;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 10% 70%  20%;
+}
+#main {
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+    padding: 25px;
+}
+
+#photo{
+    grid-template-columns: -1;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+#nav {
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 25%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-color: rgb(246, 246, 246);
+    border-radius: 5px;
+    padding: 15px;
+    padding-left: 0;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style-type: none;
+}
+
+a.nav {
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    text-decoration: none;
+    transition: 0.5s;
+    color: rgb(68, 136, 29);
+}
+a.nav:hover{
+    color: rgb(49, 70, 45);
+}
+a.nav:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+}
+a.nav::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background:rgb(223, 223, 48);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+#nav_tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    /* font-family: 'Source Code Pro', monospace; */
+}
+
+#footer {
+    grid-row: -1;
+    text-align: center;
+    background-color: white;
+    bottom: 0;
+}
+
+h2 {
+    line-height: 1.3em;
+    font-size: 2.1em;
+    font-family: HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    padding-left: 5%;
+}
+p {
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    padding-left: 5%;
+}
+section {
+    border-bottom: whitesmoke;
+    border-width: thin;
+    border-bottom-style: solid;
+}
+
+
+.shining {
+  font-size: 2em;
+  font-family: Lato, sans-serif;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg,  #25aaec 10%, rgba(255,255,255,1) 50%, #25aaec 100%);
+  background-size: 80%;
+  background-repeat: repeat;
+  color: transparent;
+  background-clip: text;
+  animation: shining 5s linear infinite;
+}
+
+@keyframes shining {
+  from {
+    background-position: -500%;
+  }
+  to {
+    background-position: 500%;
+  }
+}

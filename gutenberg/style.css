@@ -1,0 +1,29 @@
+pre {
+    font-size: 20px;
+    color: rgb(63, 149, 219);
+}
+
+body {
+    background-color: burlywood;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+}
+
+p {
+    font-size: 23px;
+    font-style: italic;
+    font-family: 'Times New Roman' serif;
+}
+
+img {
+    height: min-auto;
+    border-radius: 5px;
+}
+
+.caption{
+    font-weight: bold;
+    border: 1px solid black;
+}

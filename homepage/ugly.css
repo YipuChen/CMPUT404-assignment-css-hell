@@ -1,0 +1,115 @@
+#body {
+    background-color: rgb(238, 238, 238);
+}
+
+#container {
+    display: grid;
+    grid-template-rows: 25% 70% 5%;
+    background-color:rgb(82, 26, 26);
+}
+
+#header {
+    height: 100px;
+    grid-row: 1;
+    background-color: black;
+    
+}
+
+h1.name {
+    width: 300px;
+    height: 100px;
+    font-family: cursive;
+    font-size: 2em;
+    font-style: bold;
+    color: yellow;
+    position: relative;
+    animation: namemove 8s infinite;
+}
+@keyframes namemove {
+  from {left: 30%;}
+  to {left: 55%;}
+}
+
+#content {
+    display: grid;
+    grid-row: 2;
+    grid-template-columns: 20% 40% 40%;
+}
+
+#nav {
+    grid-column: 1;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 25%;
+    display: grid;
+    background-color: rgb(82, 26, 26);
+    border-radius: 5px;
+    padding: 15px;
+    padding-left: 0;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style-type: none;
+}
+
+a.nav {
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    color: rgb(68, 136, 29);
+
+    rotate: 10deg;
+}
+
+#nav_tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Source Code Pro', cursive;
+}
+
+#photo{
+    grid-row: 1;
+    grid-column: 2;
+    margin: 0;
+    align-self: center;
+}
+#main {
+    grid-column: 3;
+    align-items: end;
+    border-radius: 15px;
+    padding: 25px;
+    max-height: 1000px;
+    font-family: serif;
+    color: red;
+    overflow: vis;
+}
+
+#footer {
+    grid-row: 3;
+    text-align: center;
+    color:yellow;
+    bottom: 0;
+}
+
+h2{
+    line-height: 1.3em;
+    padding-left: 1em;
+}
+
+p{
+    color: green;
+    font-style: italic;
+    font-size: 1em;
+    line-height: 2em;
+}
+section {
+    border: red;
+    border-width: bold;
+    border-style: solid;
+}
